@@ -579,9 +579,15 @@ body {
     background-color: #947054;
     color: White; }
   .card .card-head {
-    position: relative; }
-    .card .card-head img {
-      width: 100%; }
+    position: relative;
+    height: 280px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .card .card-head a .img-link {
+      width: 100%;
+      height: 280px; }
     .card .card-head .cost .cost-btn {
       display: inline-block;
       position: absolute;
@@ -603,10 +609,10 @@ body {
     .card .card-body h5 {
       font-size: 1.125rem;
       margin: 0;
-      margin-bottom: 8px; }
+      margin-bottom: 10px; }
     .card .card-body p {
       margin: 0;
-      margin-bottom: 30px; }
+      margin-bottom: 50px; }
     .card .card-body .location {
       color: #947054;
       margin: 0;
@@ -625,7 +631,10 @@ body {
       .card .card-body .description .more-link {
         color: #947054; }
     .card .card-body .property-meta-data {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      width: 80%;
+      position: absolute;
+      bottom: 20px; }
       .card .card-body .property-meta-data span {
         font-size: 12px;
         margin-left: 5px;
@@ -983,6 +992,12 @@ div.tab-content {
     max-width: 100%;
     border: none;
     box-shadow: none; }
+    .single-post-container .single-post .card-head {
+      height: 700px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
     .single-post-container .single-post .card-body {
       padding: 8px;
       text-align: center; }
