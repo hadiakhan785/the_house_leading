@@ -38,11 +38,9 @@ get_header();
 <h2 class="section-heading">PROPERTIES</h2>
 
   <div class="tabs">
-          <button class="tab-links btn-primery tab-links" onclick="openTab(event, 'houses')" id="default-open">HOUSES</button><button class="tab-links btn-primery tab-links" onclick="openTab(event, 'appartments')">APPARTMENTS</button>
+          <button class="tab-links btn-primery" onclick="openTab(event, 'houses')" id="default-open">HOUSES</button><button class="tab-links btn-primery" onclick="openTab(event, 'appartments')">APPARTMENTS</button>
         </div>
 
-
-  <div class="container latest-posts-wrapper">  
 		</main><!-- #main -->
   </div><!-- #primary -->
   <?php 

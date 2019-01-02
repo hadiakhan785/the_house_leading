@@ -949,12 +949,10 @@ div.tab-content {
   margin-bottom: 30px;
   text-align: center; }
   .tabs .tab-links {
-    background-color: transparent;
     font-weight: 400;
-    border-bottom: 2px solid transparent;
     margin: 0 16px; }
     .tabs .tab-links:hover {
-      color: #000; }
+      color: #fff; }
     @media (max-width: 575px) {
       .tabs .tab-links {
         font-size: 0.875rem;
