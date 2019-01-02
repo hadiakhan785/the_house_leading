@@ -53,8 +53,9 @@ get_header();
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>    
        <!-- Card End-->
     <div class="card">
-      <div class="card-head">
-      <?php the_post_thumbnail('post-size');?>
+      <div class="card-head" style='background-image: url("<?php the_post_thumbnail_url('post-size' );?>");'>
+      <a href="<?php the_permalink()?>"><div class="img-link"></div></a>
+      
         <div class="cost">
           <p class="cost-btn">
           $<?php echo get_field('cost_of_the_house') ?>
@@ -107,8 +108,9 @@ get_header();
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>    
        <!-- Card End-->
     <div class="card">
-      <div class="card-head">
-      <?php the_post_thumbnail('post-size');?>
+      <div class="card-head"  style='background-image: url("<?php the_post_thumbnail_url('post-size' );?>");'>
+      <a href="<?php the_permalink()?>"><div class="img-link"></div></a>
+
         <div class="cost">
           <p class="cost-btn">
           $<?php echo get_field('cost_of_the_house') ?>
