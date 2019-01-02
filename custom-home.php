@@ -36,9 +36,7 @@ get_header();
 </div>
 <div class="latest-posts-container">
 
-<h2 class="section-heading">FEATURED PROPERTIES</h2>
-
-  <div class="container latest-posts-wrapper">  
+<h2 class="section-heading">FEATURED PROPERTIES</h2> 
 		</main><!-- #main -->
   </div><!-- #primary -->
   <?php 

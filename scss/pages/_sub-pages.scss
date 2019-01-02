@@ -25,15 +25,12 @@ div.tab-content{
 	margin: 0 18px;
 	margin-bottom: 30px;
 	text-align: center;
-	
 	.tab-links{
-		background-color: transparent;
 		font-weight: 400;
-		border-bottom: 2px solid transparent;
 		margin: 0 16px;
 
 		&:hover{
-			color: $black;
+			color: $white;
 		}
 		
 		@include mq('sm', max){
