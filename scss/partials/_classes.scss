@@ -1,0 +1,31 @@
+//===========================================
+// -Helper Classes start
+//===========================================
+
+// Flexbox
+.flex-d{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+// Clearfix Hack 
+.clearfix{
+	&:after {
+		content: " "; 
+		visibility: hidden;
+		display: block;
+		height: 0;
+		clear: both;
+	 }
+}
+
+// Text Alignment
+.text-center{
+	text-align: center;
+}
+
+//===========================================
+// -Helper Classes end
+//===========================================
+	

@@ -1,0 +1,181 @@
+//===========================================
+// -Forms Start
+//===========================================
+
+
+// Label Extend
+%form-labels{
+	color: $primery-color !important;
+	float: none;
+	text-align: left;
+	width: auto;
+	
+	@include mq('md', max){
+		font-size: rem(14);
+	}
+}
+
+// Input Extend
+%inputs-text-and-pwd {
+	border: none!important;
+	border-bottom: 2px solid $primery-color !important;
+	&:focus{
+		outline: none!important;
+	}
+	
+	@include mq('md', max){
+		font-size: rem(14) !important;
+	}
+}
+
+// Submit Button Extend
+%submit-btn{
+	padding: 10px 20px;
+	background-color: $primery-color;
+	color: $white;
+	font-size: rem(24);
+	font-weight: 600;
+	transition: 400ms;
+	border: none;
+	&:hover {
+		background-color: $black;
+		color: $white;
+	} 
+	
+	&:focus{
+		outline: none;
+	}
+	
+	&:active{
+		background-color: lighten($primery-color, 70%);	
+		color: $black;
+	}
+}
+
+
+// Registration & Login Form Start(Ultimate Members Plugin Override)
+.entry-content{
+	.um{
+		.um-form{
+			.um-field-label{
+				@extend %form-labels;
+			}
+			
+			input[type=text]{
+				@extend %inputs-text-and-pwd;
+			}
+			
+			input[type=password]{
+				@extend %inputs-text-and-pwd;
+			}
+		}
+		
+		input[type=submit].um-button{
+			@extend %submit-btn;
+		}
+		
+		.um-button.um-alt{
+			padding: 10px 20px;
+			background-color: $black;
+			color: $white;
+			font-size: rem(24);
+			font-weight: 600;
+			border: none;
+			transition: 400ms;
+			&:hover {
+				background-color: $primery-color;
+				color: $white;
+			} 
+			
+			&:focus{
+				outline: none;
+			}
+		}
+	}
+}
+// Registration & Login Form End (Ultimate Members Plugin Override)
+
+// Account & Post Ad Page Start (WP-User Frontend Override) 
+form {
+	ul.wpuf-form{
+		// Form Elements Start
+		li{
+			text-align: left;
+			// Label div
+			.wpuf-label{
+				width: 100%;
+				text-align: left;
+				label{
+					@extend %form-labels;
+					
+					@include mq('md', max){
+						font-size: rem(14) !important;
+					}
+				}
+			}
+			
+			// Fields Div
+			.wpuf-fields{
+				text-align: left;
+				float: none;
+				width: 100%;
+				
+				input{
+					@extend %inputs-text-and-pwd;
+				}
+				
+				input[type=radio], input[type=checkbox] {
+					width: auto;
+				}
+				
+				// Radio Buttons Label
+				.wpuf-radio-block{
+					@include mq('md', max){
+						font-size: rem(14) !important;
+					}
+				}
+
+				// Checkbox Label
+				label{
+					@include mq('md', max){
+						font-size: rem(14) !important;
+					}
+				}
+
+				// Select Option
+				select{
+					width: 100%;
+
+					option{
+						width: 30% !important;
+						font-size: rem(14);
+					}
+				}
+			}
+
+			// Suggestions
+			.wpuf-help, #pass-strength-result{
+				font-size: rem(14);
+			}
+			// Submit & Update Buttons
+			#wpuf-account-update-profile, input[type=submit]{
+				@extend %submit-btn;
+			}
+		}
+
+		// Numeric Field
+		li.field-size-large {
+			width: 100%;
+			.wpuf-fields{
+				float: none;
+				width: 100%;
+			}
+		}
+		// Form Elements End		
+	}
+}
+// Account & Post Ad Page End (WP-User Frontend Override) 
+
+//===========================================
+// -Forms end
+//===========================================

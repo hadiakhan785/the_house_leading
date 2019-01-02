@@ -1,0 +1,57 @@
+//===========================================
+    // -Buttons start
+//===========================================
+
+// Primery Button
+.btn-primery {
+	padding: 10px 20px;
+	background-color: $white;
+	color: $primery-color;
+	font-size: rem(24);
+	font-weight: 600;
+	transition: 400ms;
+	border: none;
+	&:hover {
+		background-color: $primery-color;
+		color: White;
+	} 
+
+	&:focus{
+		outline: none;
+	}
+
+	&:active{
+		background-color: lighten($primery-color, 70%);	
+		color: $black;
+	}
+}
+
+// Secondary Button
+.btn-secndry {
+	padding: 10px 20px;
+	background-color: $primery-color;
+	color: $white;
+	font-size: rem(24);
+	font-weight: 600;
+	border: none;
+  transition: 400ms;
+	&:hover {
+		background-color: $black;
+		color: White;
+	} 
+
+	&:focus{
+		outline: none;
+	}
+}
+
+// Toggle Menu Button
+.menu-toggle{
+	margin: 8px;
+	background-color: transparent;
+	border: 1px solid $white;
+	color: $white;
+}
+//===========================================
+    // -Buttons end
+//===========================================

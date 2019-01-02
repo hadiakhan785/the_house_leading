@@ -1,0 +1,111 @@
+//===========================================
+// -Footer start
+//===========================================
+
+// Main Footer Start
+.main-footer {
+	background-image: url("../images/cta.jpg");
+	
+	// Footer Layout Start
+	.footer-layout {
+		background-color: rgba(7, 7, 7, 0.949);
+		padding-top: 80px;
+		
+		// Footer Content Wrap Start
+		.flex-footer{
+			@extend .flex-d ;
+			align-items: flex-start;
+			color: #7d7d7d;
+			flex-wrap: wrap;	
+			
+			// Footer Items Start
+			.footer-items{
+				h5 {
+					font-size: rem(16);
+					color: $white;
+					border-bottom: 2px solid $primery-color;
+				}
+			}
+			
+			// Brand Image
+			.about-us {
+				.brand-logo {
+					width: 200px;
+				}
+			}
+			
+			// Contact Details Listing
+			.contact-details {	
+				.timings-detail {
+					ul {
+						padding: 0px;
+						margin: 0;
+						li {
+							padding:  10px 0px 15px 0px;
+							border-bottom: 1px solid #7d7d7d;
+							list-style: none;
+						}
+					}
+				}
+				i {
+					color: $primery-color;
+					margin: 0px 10px 0px 0px;
+					font-size: rem(18);
+				}
+			}
+			
+			// Widget Styling
+			.useful-links {
+				height: 550px;
+				
+				ul {
+					padding: 0px;
+					@extend .flex-d ;
+					justify-content: flex-start;
+					flex-wrap: wrap;
+					margin: 0;
+					li {
+						width: 40%;
+						padding:  10px 0px 15px 0px;
+						list-style: none;
+						a {
+							text-decoration: none;
+							color: #7d7d7d;
+							border-bottom: 2px solid transparent;
+							transition: 400ms;
+							line-height: 10px;
+							&:hover {
+								border-bottom: 2px solid $primery-color;
+								color: $primery-color;
+							}
+						}
+					}
+				}
+				
+			}
+
+			// Footer Div Alignments
+			.footer-div-alignments {
+				line-height : 28px;
+				margin: 0px;
+				width: (100% / 3);
+				min-width: 300px;
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				align-items: flex-start;
+				font-size: rem(16);
+				padding: 10px 20px;
+			}
+		}
+		// Footer Content Wrap End
+
+	}
+	// Footer Layout End
+}
+// Main Footer End
+
+
+//===========================================
+// -Footer end
+//===========================================

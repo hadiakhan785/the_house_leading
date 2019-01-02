@@ -1,0 +1,364 @@
+//===========================================
+// -Sub Pages start
+//===========================================
+
+// Extends Define Start
+%privacy-img{
+	margin: 0 auto;
+	text-align: center;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 300px;
+}
+// Extends Define End
+
+// Posts Page Start
+div.tab-content{
+	display: none;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+// Tabs
+.tabs{
+	margin: 0 18px;
+	margin-bottom: 30px;
+	text-align: center;
+	
+	.tab-links{
+		background-color: transparent;
+		font-weight: 400;
+		border-bottom: 2px solid transparent;
+		margin: 0 16px;
+
+		&:hover{
+			color: $black;
+		}
+		
+		@include mq('sm', max){
+			font-size: rem(14);
+			margin: 0 8px;
+		}
+	}
+}
+
+.active{
+	background-color: $white;
+	color: $primery-color;
+	border-bottom: 2px solid $primery-color;
+	
+}
+// Posts Page End
+
+// Privacy Policy Styling 
+.privacy {
+	padding: 100px 30px;
+	.privacy-img1 {
+		background-image: url("../images/privacy.png");
+		@extend %privacy-img;
+		
+	}
+	.privacy-img2 {
+		background-image: url("../images/privacy2.png");
+		@extend %privacy-img;
+	}
+	p, ul {
+		font-size: rem(22);
+		color: gray;
+		font-style: italic;
+	}
+}
+// Privacy Policy Styling
+
+// Single Post Page Styling
+.single-post-container{
+	margin: 150px 0px;
+
+	.single-post{
+		width: 100%;
+		max-width: 100%;
+		border: none;
+		box-shadow: none;
+		
+		.card-body {	
+			padding: 8px;
+			text-align: center;
+			.post-title {
+				font-size: rem(45);
+				text-transform: uppercase;
+				margin-bottom: 10px;
+				font-weight: 600;
+				text-align: center;
+				color: $secondary-color;
+				font-family: $font-primery;
+			}
+			
+			.location{
+				display: block;
+				text-align: center;
+				font-size: rem(16);
+				color: $primery-color;
+			}
+			
+			.further-detail{
+				padding: 0px 16px;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				border-bottom: 1px solid lighten($secondary-color, 30%);
+				
+				@include mq('lg', max){
+					justify-content: center !important;
+				}
+
+				
+				
+				.post-details {
+					font-size: rem(16)!important;
+					min-width: 40%;
+					border-bottom: 2px solid $white;
+					text-align: left;
+					
+					@include mq('sm', max){
+						min-width: 50%;
+						text-align: center;
+					}
+					.detail-title, .category-title {
+						display: inline-block;
+						width: 30%;
+						font-weight: 400;
+
+						@include mq('sm', max){
+							width: auto;
+							// margin: 0 auto;
+						}
+					}
+					
+					p {
+						font-size: rem(16);
+						
+						
+						span{
+							font-size: rem(16);
+							font-weight: 700;
+						}
+					}
+					.post-categories {
+						list-style-type: none;
+						margin: 0;
+						padding: 0;
+						display: inline-block;
+						li {
+							padding: 0;
+							a {
+								font-weight: bold;
+								text-decoration: none;
+								color: $secondary-color;
+								font-size: rem(16);
+							}
+						}
+					}
+				}
+			}
+	
+			.booknow {
+				display: block;
+				padding: 10px 20px;
+				background-color: $primery-color;
+				color: $white;
+				font-size: rem(30);
+				font-weight: 600;
+				transition: 400ms;
+				border: none;
+				margin: 0 auto;
+				}
+			}
+		}
+	}
+	// Single Post Page Styling
+	
+	// Login Page Styling
+	.um-form .um-misc-img img {
+		width: 400px!important;
+		border: 3px solid $primery-color;
+		
+		@include mq('md', max){
+			width: 150px !important;
+		}
+	}
+	
+	.um-form .um-misc-img ~ div {
+		color: $primery-color!important;
+		font-size: rem(35);
+		text-transform: capitalize;
+		
+		
+		@include mq('md', max){
+			font-size: rem(20);
+		}
+	}
+	
+	.um-misc-ul{
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		display: flex;
+		justify-content: space-between;
+		padding: 14px 0;
+		
+		li {
+			
+			a{
+				color: $black;
+				text-decoration: $secondary-color;
+				font-weight: 600;
+			}
+		}
+	}
+	// Login Page Styling
+	
+	// Registration Page Styling
+	.entry-content {
+		text-align: center;
+		font-size: larger;
+		
+		@include mq('sm', max){
+			width: 90% !important;
+			margin: 0 auto;
+		}
+	}
+	// Registration Page Styling
+	
+	// Account Page Styling 
+	.wpuf-dashboard-container .wpuf-dashboard-content{
+		text-align: left;
+		float: none !important;
+		margin: 0 auto !important;
+		padding: 0 30px;
+		
+		@include mq('sm', max){
+			width: 100% !important;
+			font-size: rem(14);
+		}
+	}
+	
+	.wpuf-dashboard-container .wpuf-dashboard-navigation {
+		text-align: left;
+		float: none !important;
+		width: auto !important;
+		
+		ul{
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			
+			li{
+				border: 1px solid $primery-color;
+				margin: 10px 5px;
+				padding-bottom: 0 !important;
+				a{
+					color: darken($secondary-color, 20%);
+					display: block;
+					padding: 10px 30px;
+					transition: 50ms;
+					
+					@include mq('sm', max){
+						padding: 5px 15px;
+						font-size: rem(14);
+					}
+					
+					&:hover{
+						background-color: $primery-color;
+						color: $white;
+					}
+					
+					&:active{
+						background-color: lighten($primery-color, 30%) ;
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+	
+	.dashboard{
+		p{
+			a{
+				color: darken($secondary-color, 20%);
+				font-weight: bold;
+				text-decoration: none;
+			}
+		}
+	}
+	form ul.wpuf-form{
+		width: 60% !important;
+		margin: 0 auto !important;
+		padding-top: 50px !important;
+		
+		@include mq('lg', max){
+			width: 100% !important;
+		}
+	}
+	
+	.form-row-last, .form-row-first{
+		float: none !important;
+		width: 100% !important;
+	}
+	
+	.wpuf-fields input{
+		width: 100%;
+	}
+	// Account Page Styling 
+	//===========================================
+	// -Sub Pages end
+	//===========================================
+	
+	.further-description {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 10px 0px;
+		.description {
+			width: 70%;
+			text-align: left;
+			@include mq('lg', max){
+				width: 100%;
+			}
+		}
+		.author-contact {
+			margin: 0px 5px;
+			border-left: 1px solid lighten($primery-color, 30%);
+			padding: 30px;
+			width: 30%;
+			min-width: 250px;
+			margin: 0 auto;
+			@include mq('md', max){
+				border: 1px solid lighten($primery-color, 30%);
+			}
+			
+			.title{
+				font-size: rem(35);
+				margin: 0;
+			}
+
+			.contact {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: rem(18);
+				font-weight: bold;
+				padding: 20px 0px;
+				@include mq('md', max){
+					display: block;
+				}
+				h5 {
+					text-transform: capitalize;
+					border-bottom: 1px solid lighten($primery-color, 30%);
+					font-size: 22px;
+				}
+			}
+		}
+	}

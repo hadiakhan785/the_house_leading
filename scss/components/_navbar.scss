@@ -1,0 +1,66 @@
+//===========================================
+// -Navbar start
+//===========================================
+
+
+.main-navigation{
+	width: auto;
+	@include mq('sm', max){
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+	
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		margin-top: 8px;
+		
+		li{
+			display: inline-block;
+			
+			@include mq('md', max){
+				float: none;
+			}
+			
+			a{
+				color: $white;
+				text-decoration: none;
+				display: block;
+				padding: 30px 20px;
+				text-transform: uppercase;
+				font-family: $font-primery;
+				font-weight: 600;
+				transition: all 0.5s ease-in-out;
+				
+				&:hover{
+					color: $primery-color;
+					text-decoration: underline;
+				}
+				
+				&:active{
+					background-color: $white;
+					color: $black;
+				}
+			}
+		}
+	}
+}	
+
+// Toggle Navbar
+.toggled{
+	ul{
+		background-color: $black;
+		li{
+			display: block;
+		}
+	}
+}
+
+
+
+//===========================================
+// -Navbar end
+//===========================================

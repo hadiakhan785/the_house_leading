@@ -1,0 +1,27 @@
+//===========================================
+	// -Variables start
+//===========================================
+
+// Colors start
+$white:			#fff; //white
+$black:			#000; //black
+$primery-color: #947054; 
+$secondary-color: #323232;
+
+// Typography
+$font-default:	'Roboto', sans-serif;
+$font-primery:	'Open Sans', sans-serif;
+
+
+// Break Pointss
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+//===========================================
+	// -Variables end
+//===========================================
