@@ -19,15 +19,7 @@
 
         <!-- About Us Start -->
         <div class="footer-items about-us footer-div-alignments">
-          <!-- <h5>ABOUTS US</h5>
-          <img src="http://localhost:8080/houseleading/wp-content/themes/house-leading/images/footer.jpg" alt="image">
-          <br>
-          <img src="http://localhost:8080/houseleading/wp-content/themes/house-leading/images/logo.png" alt="brand logo" class="brand-logo">
-          <p class="about-intro">
-            Integer nec bibendum lacus. Suspen disse dictum enim sit amet libero males uada feugiat. Praesent malesuada.
-          </p> -->
           <?php dynamic_sidebar('footer-3')?>
-
         </div>
         <!-- About Us End -->
 
@@ -41,10 +33,6 @@
         <div class="footer-items useful-links footer-div-alignments">
           <?php dynamic_sidebar('footer-1')?>
         </div>
-        <div class="footer-items newsleter footer-div-alignments">
-          <?php dynamic_sidebar('footer-4')?>
-        </div>
-
 		  <!-- Useful Links End -->
 
 
