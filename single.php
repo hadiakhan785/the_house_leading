@@ -13,8 +13,7 @@ $thumbnail = get_field('thumbnail');
     <div class="container">
       <!-- Card 1 End-->
       <div class="single-post">
-                <div class="card-head">
-                  <?php the_post_thumbnail()?>
+                <div class="card-head" style='background-image: url("<?php the_post_thumbnail_url('post-size' );?>");'>
                 </div>
 
                 <div class="card-body">
