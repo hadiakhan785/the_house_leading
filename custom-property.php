@@ -17,6 +17,7 @@ get_header();
 <div id="primary" class="content-area">
 		<main id="main" class="site-main">
     <div class="banner-section">
+      <div class="banner-layout banner-layout-property">
       <h1>
 		<?php
 		while ( have_posts() ) :
@@ -32,11 +33,9 @@ get_header();
 		endwhile; // End of the loop.
     ?>
     </h1>
+    </div>
 </div>
 <div class="latest-posts-container">
-
-<h2 class="section-heading">PROPERTIES</h2>
-
   <div class="tabs">
           <button class="tab-links btn-primery" onclick="openTab(event, 'houses')" id="default-open">HOUSES</button><button class="tab-links btn-primery" onclick="openTab(event, 'appartments')">APPARTMENTS</button>
         </div>
