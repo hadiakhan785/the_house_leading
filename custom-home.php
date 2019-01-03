@@ -121,6 +121,9 @@ get_header();
 
         </div>
     </section>
+    <div class="testomonial">
+      <?php  echo do_shortcode('[testimonial_view id="1"]'); ?>
+    </div>
 
 <?php
 get_footer();
