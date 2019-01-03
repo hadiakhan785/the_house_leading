@@ -17,6 +17,7 @@ get_header();
 <div id="primary" class="content-area">
 		<main id="main" class="site-main">
     <div class="banner-section">
+      <div class="banner-layout banner-layout-privacy-policy">
       <h1>
 		<?php
 		while ( have_posts() ) :
@@ -32,11 +33,11 @@ get_header();
 		endwhile; // End of the loop.
     ?>
     </h1>
+    </div>
 </div>
 
 <article class="privacy">
         <div class="container">
-          <h2 class="privacy-title section-heading">Personalized Privacy Policy</h2>
           <br>
           <div class="privacy-img1">
           </div>
