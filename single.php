@@ -86,12 +86,6 @@ $thumbnail = get_field('thumbnail');
                     </div>
                   </div>
                   </div>
-                  
-                  
-                    <!-- <button class="btn-secndry booknow">
-                      BOOK NOW
-                    </button> -->
-                  
                 </div>  
               </div>
             </div>

@@ -93,11 +93,25 @@
 		}
 	}
 }
+
+.form-row-last, .form-row-first{
+  float: none !important;
+  width: 100% !important;
+}
 // Registration & Login Form End (Ultimate Members Plugin Override)
+
 
 // Account & Post Ad Page Start (WP-User Frontend Override) 
 form {
 	ul.wpuf-form{
+		width: 60% !important;
+		margin: 0 auto !important;
+		padding-top: 50px !important;
+		
+		@include mq('lg', max){
+			width: 100% !important;
+		}
+
 		// Form Elements Start
 		li{
 			text-align: left;
@@ -122,6 +136,7 @@ form {
 				
 				input{
 					@extend %inputs-text-and-pwd;
+				  width: 100%;
 				}
 				
 				input[type=radio], input[type=checkbox] {
@@ -174,6 +189,9 @@ form {
 		// Form Elements End		
 	}
 }
+
+
+
 // Account & Post Ad Page End (WP-User Frontend Override) 
 
 //===========================================
