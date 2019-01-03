@@ -18,6 +18,7 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
     <div class="banner-section">
+      <div class="banner-layout">
       <h1>
 		<?php
 		while ( have_posts() ) :
@@ -33,10 +34,11 @@ get_header();
 		endwhile; // End of the loop.
     ?>
     </h1>
+    <button class="btn-secndry get-started-btn"><a href="#featured" >Get Started</a></button>
+    </div >
 </div>
-<div class="latest-posts-container">
-
-<h2 class="section-heading">FEATURED PROPERTIES</h2> 
+<div class="latest-posts-container" >
+<h2 class="section-heading" id="featured">FEATURED PROPERTIES</h2> 
 		</main><!-- #main -->
   </div><!-- #primary -->
   <?php 
@@ -119,6 +121,9 @@ get_header();
 
         </div>
     </section>
+    <div class="testomonial">
+      <?php  echo do_shortcode('[testimonial_view id="1"]'); ?>
+    </div>
 
 <?php
 get_footer();

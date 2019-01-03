@@ -415,6 +415,12 @@ th {
   .btn-secndry:focus {
     outline: none; }
 
+.get-started-btn {
+  margin-top: 15px; }
+  .get-started-btn a {
+    text-decoration: none;
+    color: #fff; }
+
 .menu-toggle {
   margin: 8px;
   background-color: transparent;
@@ -505,7 +511,8 @@ form ul.wpuf-form li.field-size-large {
 
 html, body {
   font-family: "Roboto", sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  scroll-behavior: smooth; }
   @media (min-width: 576px) {
     html, body {
       font-size: 10px; } }
@@ -547,22 +554,34 @@ body {
   font-size: 20px; }
 
 .banner-section {
-  height: 900px;
   background-image: url("../images/hero1.jpg");
   background-size: cover;
   background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-repeat: no-repeat; }
-  .banner-section h1 {
-    min-width: 100px;
-    text-align: center;
-    font-size: 3.125rem;
-    font-weight: 700;
-    background-color: #000;
-    color: #fff;
-    padding: 10px 15px; }
+  .banner-section .banner-layout {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif; }
+    .banner-section .banner-layout h1 {
+      min-width: 100px;
+      text-align: center;
+      font-size: 3.125rem;
+      font-weight: 700;
+      color: #fff;
+      padding: 10px 15px;
+      margin: 0px; }
+    .banner-section .banner-layout h4 {
+      margin: 0px;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.25rem;
+      color: rgba(255, 255, 255, 0.8); }
+  .banner-section .banner-layout-property, .banner-section .banner-layout-privacy-policy {
+    height: 60vh; }
 
 .latest-posts-container {
   margin-top: 100px;
@@ -964,25 +983,6 @@ div.tab-content {
   color: #947054;
   border-bottom: 2px solid #947054; }
 
-.privacy .privacy-img1, .privacy .privacy-img2 {
-  margin: 0 auto;
-  text-align: center;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 300px; }
-
-.privacy {
-  padding: 100px 30px; }
-  .privacy .privacy-img1 {
-    background-image: url("../images/privacy.png"); }
-  .privacy .privacy-img2 {
-    background-image: url("../images/privacy2.png"); }
-  .privacy p, .privacy ul {
-    font-size: 1.375rem;
-    color: gray;
-    font-style: italic; }
-
 .single-post-container {
   margin: 150px 0px; }
   .single-post-container .single-post {
@@ -1103,6 +1103,25 @@ div.tab-content {
         text-transform: capitalize;
         border-bottom: 1px solid #d2beaf;
         font-size: 22px; }
+
+.privacy .privacy-img1, .privacy .privacy-img2 {
+  margin: 0 auto;
+  text-align: center;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px; }
+
+.privacy {
+  padding: 100px 30px; }
+  .privacy .privacy-img1 {
+    background-image: url("../images/privacy.png"); }
+  .privacy .privacy-img2 {
+    background-image: url("../images/privacy2.png"); }
+  .privacy p, .privacy ul {
+    font-size: 1.375rem;
+    color: gray;
+    font-style: italic; }
 
 .um-form .um-misc-img img {
   width: 400px !important;
