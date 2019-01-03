@@ -8,14 +8,14 @@
 	
 	// Footer Layout Start
 	.footer-layout {
-		background-color: rgba(7, 7, 7, 0.949);
+		background-color: rgba($black, 0.9);
 		padding-top: 80px;
 		
 		// Footer Content Wrap Start
 		.flex-footer{
 			@extend .flex-d ;
 			align-items: flex-start;
-			color: #7d7d7d;
+			color: lighten($secondary-color, 30%);
 			flex-wrap: wrap;	
 			
 			// Footer Items Start
@@ -42,7 +42,7 @@
 						margin: 0;
 						li {
 							padding:  10px 0px 15px 0px;
-							border-bottom: 1px solid #7d7d7d;
+							border-bottom: 1px solid lighten($secondary-color, 30%);
 							list-style: none;
 						}
 					}
@@ -70,7 +70,7 @@
 						list-style: none;
 						a {
 							text-decoration: none;
-							color: #7d7d7d;
+							color: lighten($secondary-color, 30%);
 							border-bottom: 2px solid transparent;
 							transition: 400ms;
 							line-height: 10px;
@@ -83,7 +83,7 @@
 				}
 				
 			}
-
+			
 			// Footer Div Alignments
 			.footer-div-alignments {
 				line-height : 28px;
@@ -99,7 +99,7 @@
 			}
 		}
 		// Footer Content Wrap End
-
+		
 	}
 	// Footer Layout End
 }

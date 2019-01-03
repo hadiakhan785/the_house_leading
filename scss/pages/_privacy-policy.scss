@@ -2,7 +2,17 @@
 // -Privcy Policy Page End
 //===========================================
 
-
+// Privacy Policy Styling 
+.privacy {
+  padding: 100px 30px;
+  
+	p, ul {
+		font-size: rem(22);
+		color: $secondary-color;
+		font-style: italic;
+	}
+}
+// Privacy Policy Styling
 
 //===========================================
 // -Privcy Policy Page End

@@ -1,0 +1,47 @@
+//===========================================
+// -Post Page start
+//===========================================
+
+
+// Posts Page Start
+div.tab-content{
+	display: none;
+	flex-wrap: wrap;
+	@include mq('lg', max){
+		justify-content: center;
+	}
+
+}
+
+// Tabs
+.tabs{
+	margin: 0 18px;
+	margin-bottom: 30px;
+	text-align: center;
+	.tab-links{
+		font-weight: 400;
+		margin: 0 16px;
+		
+		&:hover{
+			color: $white;
+		}
+		
+		@include mq('sm', max){
+			font-size: rem(14);
+			margin: 0 8px;
+		}
+	}
+}
+
+.active{
+	background-color: $white;
+	color: $primery-color;
+	border-bottom: 2px solid $primery-color;
+	
+}
+
+//===========================================
+// -Post Page end
+//===========================================
+	
+
