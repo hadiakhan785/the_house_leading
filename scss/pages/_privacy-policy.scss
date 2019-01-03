@@ -1,0 +1,38 @@
+//===========================================
+// -Privcy Policy Page End
+//===========================================
+
+// Extends Define Start
+%privacy-img{
+	margin: 0 auto;
+	text-align: center;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 300px;
+}
+// Extends Define End
+
+// Privacy Policy Styling 
+.privacy {
+	padding: 100px 30px;
+	.privacy-img1 {
+		background-image: url("../images/privacy.png");
+		@extend %privacy-img;
+		
+	}
+	.privacy-img2 {
+		background-image: url("../images/privacy2.png");
+		@extend %privacy-img;
+	}
+	p, ul {
+		font-size: rem(22);
+		color: gray;
+		font-style: italic;
+	}
+}
+// Privacy Policy Styling
+
+//===========================================
+// -Privcy Policy Page End
+//===========================================
