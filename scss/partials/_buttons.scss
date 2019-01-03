@@ -44,7 +44,14 @@
 		outline: none;
 	}
 }
-
+// get started button
+.get-started-btn {
+	margin-top: 15px;
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+}
 // Toggle Menu Button
 .menu-toggle{
 	margin: 8px;
