@@ -31,7 +31,8 @@ get_header();
 				comments_template();
 			endif;
 
-		endwhile; // End of the loop.
+    endwhile; // End of the loop.
+    the_content();
     ?>
     </h1>
     <button class="btn-secndry get-started-btn"><a href="#featured" >Get Started</a></button>
