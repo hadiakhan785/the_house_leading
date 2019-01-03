@@ -969,8 +969,10 @@ body {
 
 div.tab-content {
   display: none;
-  justify-content: space-around;
   flex-wrap: wrap; }
+  @media (max-width: 991px) {
+    div.tab-content {
+      justify-content: center; } }
 
 .tabs {
   margin: 0 18px;
@@ -1202,7 +1204,8 @@ form ul.wpuf-form {
         border: 1px solid #d2beaf; } }
     .further-description .author-contact .title {
       font-size: 2.1875rem;
-      margin: 0; }
+      margin: 0;
+      color: #947054; }
     .further-description .author-contact .contact {
       display: flex;
       justify-content: center;
@@ -1216,6 +1219,8 @@ form ul.wpuf-form {
       .further-description .author-contact .contact h5 {
         text-transform: capitalize;
         border-bottom: 1px solid #d2beaf;
-        font-size: 22px; }
+        font-size: 20px;
+        display: flex;
+        justify-content: flex-start; }
 
 /*# sourceMappingURL=style.css.map */

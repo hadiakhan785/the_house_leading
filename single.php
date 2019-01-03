@@ -77,7 +77,7 @@ $thumbnail = get_field('thumbnail');
 										<?php the_content(); ?>
                   </div>
                   <div class='author-contact'>
-                    <h4 class="title">Get in touch</h4>
+                    <h4 class="title">CONTACT</h4>
              
                     <div class="contact">
                     <div>

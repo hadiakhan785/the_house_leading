@@ -2,16 +2,15 @@
 // -Home Page start
 //===========================================
 
-// 
+//house-container
 .latest-posts-wrapper{
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-  padding-bottom: 100px;
-
+	padding-bottom: 100px;
 }
-// call to action area start 
 
+// call to action area start 
 .call-to-action-area {
 	position: relative;
 	z-index: 1;
